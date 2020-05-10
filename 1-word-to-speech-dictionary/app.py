@@ -10,7 +10,7 @@ increment = 1
 def print_values(user_input, values):
   for index, value in enumerate(values):
 
-    audio_file = "audios/{}_{}.mp3".format(user_input, index)
+    audio_file = "ignoreFiles/{}_{}.mp3".format(user_input, index)
     if not os.path.exists(audio_file):
       print("Generating audio file please wait: "+ audio_file)
       audio_obj = gTTS(text=value, lang=language, slow=False)
